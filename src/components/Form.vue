@@ -15,11 +15,16 @@
         >Sign up</li>
       </ul>
     </nav>
+
+    <SignIn/>
   </form>
 </template>
 
 <script>
+import SignIn from "./SignIn";
+
 export default {
+  components: { SignIn },
   data() {
     return {
       formState: "signin"
@@ -53,6 +58,7 @@ export default {
 
 .form__options {
   list-style: none;
+  margin-bottom: 2rem;
 }
 
 .form__option {
