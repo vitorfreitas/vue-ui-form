@@ -10,7 +10,7 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
-    "vue-flipcard": "^0.1.4"
+    "vue-flipcard": "vitorfreitas/vue-flipcard"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.7.0",

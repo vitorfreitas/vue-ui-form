@@ -8128,10 +8128,9 @@ vue-eslint-parser@^5.0.0:
     esquery "^1.0.1"
     lodash "^4.17.11"
 
-vue-flipcard@^0.1.4:
+vue-flipcard@vitorfreitas/vue-flipcard:
   version "0.1.4"
-  resolved "https://registry.yarnpkg.com/vue-flipcard/-/vue-flipcard-0.1.4.tgz#72ffbb0343f89fbd2670bc2dbb550afdc0364689"
-  integrity sha512-gC3dsSh3hce2SkENHU4o7GWsk8nQZz+xSUo0e8giPJ89X6PtpwHtvfJpknMyl8Wy9dkKOVXpFRjcC/TNAqTvSQ==
+  resolved "https://codeload.github.com/vitorfreitas/vue-flipcard/tar.gz/711cdb752e75df3671dd5213e87e592d8497d3c6"
   dependencies:
     less "^3.8.1"
     less-loader "^4.1.0"
