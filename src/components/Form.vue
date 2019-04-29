@@ -16,15 +16,16 @@
       </ul>
     </nav>
 
-    <SignIn/>
+    <SignUp/>
   </form>
 </template>
 
 <script>
 import SignIn from "./SignIn";
+import SignUp from "./SignUp";
 
 export default {
-  components: { SignIn },
+  components: { SignIn, SignUp },
   data() {
     return {
       formState: "signin"
