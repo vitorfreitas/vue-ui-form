@@ -9,7 +9,7 @@
 
     <hr class="signup__divider">
 
-    <a href="#" class="signup__link">Already member?</a>
+    <a href="#" class="signup__link" @click="emitAlreadyMemberEvent">Already member?</a>
   </div>
 </template>
 
@@ -18,7 +18,12 @@ import Input from "./Input";
 import Button from "./Button";
 
 export default {
-  components: { Input, Button }
+  components: { Input, Button },
+  methods: {
+    emitAlreadyMemberEvent() {
+      this.$emit("alreadyMember", { state: "signin" });
+    }
+  }
 };
 </script>
 

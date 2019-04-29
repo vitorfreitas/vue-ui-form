@@ -16,16 +16,20 @@
       </ul>
     </nav>
 
-    <SignUp/>
+    <VueFlipcard disable ref="flipcard">
+      <SignIn slot="front"/>
+      <SignUp slot="back" @alreadyMember="switchFormState($event.state)"/>
+    </VueFlipcard>
   </form>
 </template>
 
 <script>
+import VueFlipcard from "vue-flipcard";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 
 export default {
-  components: { SignIn, SignUp },
+  components: { SignIn, SignUp, VueFlipcard },
   data() {
     return {
       formState: "signin"
@@ -33,6 +37,10 @@ export default {
   },
   methods: {
     switchFormState(state) {
+      if (state !== this.formState) {
+        this.$refs.flipcard.flip();
+      }
+
       this.formState = state;
     }
   }
