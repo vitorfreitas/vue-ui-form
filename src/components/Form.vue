@@ -16,7 +16,7 @@
       </ul>
     </nav>
 
-    <VueFlipcard disable ref="flipcard">
+    <VueFlipcard disable ref="flipcard" width="100%" height="100%">
       <SignIn slot="front"/>
       <SignUp slot="back" @alreadyMember="switchFormState($event.state)"/>
     </VueFlipcard>
