@@ -1,9 +1,9 @@
 <template>
   <div class="signup">
     <Input label="Username"/>
-    <Input label="Password"/>
-    <Input label="Repeat password"/>
-    <Input label="Email address"/>
+    <Input label="Password" type="password"/>
+    <Input label="Repeat password" type="password"/>
+    <Input label="Email address" type="email"/>
 
     <Button text="Sign up"/>
 

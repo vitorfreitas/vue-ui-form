@@ -1,7 +1,7 @@
 <template>
   <div class="signin">
     <Input label="Username"/>
-    <Input label="Password"/>
+    <Input label="Password" type="password"/>
 
     <Checkbox text="Keep me Signed in"/>
 

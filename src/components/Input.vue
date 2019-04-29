@@ -1,13 +1,13 @@
 <template>
   <div>
     <label for="input" class="label">{{label}}</label>
-    <input type="text" id="input" class="input">
+    <input :type="type || 'text'" id="input" class="input">
   </div>
 </template>
 
 <script>
 export default {
-  props: ["label"]
+  props: ["label", "type"]
 };
 </script>
 
